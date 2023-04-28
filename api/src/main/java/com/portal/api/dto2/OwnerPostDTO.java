@@ -1,4 +1,4 @@
-package com.portal.api.dto;
+package com.portal.api.dto2;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.*;
