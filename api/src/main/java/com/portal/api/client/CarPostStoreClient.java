@@ -27,7 +27,7 @@ public class CarPostStoreClient {
 //        return Arrays.asList(Objects.requireNonNull(responseEntity.getBody()));
     }
 
-    public void ownerPostsClient(OwnerPostDTO user, String id) {
+    public void ownerPostsClient(OwnerPostDTO user) {
         restTemplate.postForEntity(USER_STORE_SERVICE_URI, user, OwnerPostDTO.class);
     }
 
