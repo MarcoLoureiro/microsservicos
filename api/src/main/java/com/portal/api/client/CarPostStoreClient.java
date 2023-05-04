@@ -1,4 +1,5 @@
 package com.portal.api.client;
+
 import com.portal.api.dto2.CarPostDTO;
 import com.portal.api.dto2.OwnerPostDTO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,12 +32,12 @@ public class CarPostStoreClient {
         restTemplate.postForEntity(USER_STORE_SERVICE_URI, user, OwnerPostDTO.class);
     }
 
-    public void changeCarForSaleClient(CarPostDTO carPostDTO, String id){
-        restTemplate.put(POSTS_STORE_SERVICE_URI+"/car/"+id,carPostDTO,CarPostDTO.class);
+    public void changeCarForSaleClient(CarPostDTO carPostDTO, String id) {
+        restTemplate.put(POSTS_STORE_SERVICE_URI + "/car/" + id, carPostDTO, CarPostDTO.class);
     }
 
-    public void deleteCarForSaleClient(String id){
-        restTemplate.delete(POSTS_STORE_SERVICE_URI+"/car/"+id);
+    public void deleteCarForSaleClient(String id) {
+        restTemplate.delete(POSTS_STORE_SERVICE_URI + "/car/" + id);
     }
 
 }

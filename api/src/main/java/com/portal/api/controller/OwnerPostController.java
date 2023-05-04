@@ -18,7 +18,7 @@ public class OwnerPostController {
     private OwnerPostServiceImpl ownerPostService;
 
     @PostMapping
-    public ResponseEntity createOwnerCar(@RequestBody OwnerPostDTO ownerPostDTO){
+    public ResponseEntity createOwnerCar(@RequestBody OwnerPostDTO ownerPostDTO) {
         ownerPostService.createOwner(ownerPostDTO);
         return new ResponseEntity<>(HttpStatus.OK);
     }

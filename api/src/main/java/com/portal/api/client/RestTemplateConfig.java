@@ -9,7 +9,7 @@ import java.time.Duration;
 @Configuration
 public class RestTemplateConfig {
 
-    public RestTemplate restTemplate(RestTemplateBuilder builder){
+    public RestTemplate restTemplate(RestTemplateBuilder builder) {
         return builder.setConnectTimeout(Duration.ofMillis(300000))
                 .setReadTimeout(Duration.ofMillis(300000)).build();
     }

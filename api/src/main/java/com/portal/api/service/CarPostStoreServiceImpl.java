@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 
-public class CarPostStoreServiceImpl implements CarPostStoreService{
+public class CarPostStoreServiceImpl implements CarPostStoreService {
 
     @Autowired
     private CarPostStoreClient carPostStoreClient;
@@ -18,7 +18,7 @@ public class CarPostStoreServiceImpl implements CarPostStoreService{
 
     @Override
     public void changeForSale(CarPostDTO carPost, String id) {
-        carPostStoreClient.changeCarForSaleClient(carPost,id);
+        carPostStoreClient.changeCarForSaleClient(carPost, id);
     }
 
     @Override
